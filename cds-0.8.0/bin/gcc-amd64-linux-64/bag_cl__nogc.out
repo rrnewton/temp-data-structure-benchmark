@@ -1,0 +1,7 @@
+Using test config file: test.conf
+System topology:
+    Logical processor count: 4
+
+Bag_Membench_Cacheline_MT::SBag_HRC
+	Bag MEMBENCH Cacheline test,
+    reader count=1 writer count=1 element count=64000000...

@@ -1,0 +1,18 @@
+To build CDS: 
+
+  cd cds-0.8.0/build ; ./build.sh -p x86_64 -o linux -b 64 --amd64-use-128bit
+
+You can pass '-z -DCDS_SBAG_BLOCKSIZE_MULT=<int>' to increase the size of each block for the
+bag algorithm (and '-z -DCDS_SBAG_DISABLE_GC', but we shouldn't use that anymore).
+
+To run the tests do:
+
+LD_LIBRARY_PATH=. ./cds-unit -t=Queue_Membench_MT
+LD_LIBRARY_PATH=. ./cds-unit -t=Queue_Membench_Cacheline_MT
+LD_LIBRARY_PATH=. ./cds-unit -t=Bag_Membench_MT
+LD_LIBRARY_PATH=. ./cds-unit -t=Bag_Membench_Cacheline_MT
+
+or for a single test do something like -t=Queue_Membench_Cacheline_MT::CSQueue.
+
+Look at cds-0.8.0/bin/gcc-amd64-linux-64/my.conf for an example of the parameters you can
+pass to the tests and how to configure them.

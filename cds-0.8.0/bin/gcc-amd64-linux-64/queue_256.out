@@ -1,0 +1,18 @@
+Using test config file: test256_1024.conf
+System topology:
+    Logical processor count: 4
+
+Queue_Membench_MT::MoirQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=256000000...
+	Throughput(MB/s) Max=151.569  Avg=148.109  Min=143.237
+
+Queue_Membench_MT::MoirQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=256000000...
+	Throughput(MB/s) Max=117.873  Avg=112.879  Min=108.84
+
+Queue_Membench_MT::MoirQueue_HRC
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=256000000...
+	Throughput(MB/s) Max=96.1058  Avg=93.2257  Min=92.3848

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structcds_1_1memory_1_1michael_1_1_heap_1_1processor__heap__base.html" title="Processor heap." alt="" coords="928,109,1333,139"/>
+<area shape="rect" id="node5" href="$structcds_1_1memory_1_1michael_1_1_heap_1_1processor__desc.html" title="Processor descriptor." alt="" coords="440,5,811,35"/>
+<area shape="rect" id="node7" href="$structcds_1_1memory_1_1michael_1_1size__class.html" title="Size class." alt="" coords="515,59,736,88"/>
+<area shape="rect" id="node9" href="$classcds_1_1memory_1_1michael_1_1_heap_1_1active__tag.html" title="Processor heap&#39;s active field." alt="" coords="457,112,793,141"/>
+<area shape="rect" id="node11" href="$structcds_1_1memory_1_1michael_1_1_heap_1_1anchor__tag.html" title="Anchor of the superblock descriptor. Updated by CAS." alt="" coords="7,187,348,216"/>
+</map>

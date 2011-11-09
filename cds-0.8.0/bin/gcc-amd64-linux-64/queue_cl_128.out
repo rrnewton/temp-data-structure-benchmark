@@ -1,0 +1,142 @@
+Using test config file: test.conf
+System topology:
+    Logical processor count: 4
+
+Queue_Membench_Cacheline_MT::MoirQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=904.197  Avg=872.166  Min=843.712
+
+Queue_Membench_Cacheline_MT::MoirQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=827.274  Avg=813.605  Min=801.62
+
+Queue_Membench_Cacheline_MT::MoirQueue_HRC
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=652.91  Avg=636.844  Min=627.551
+
+Queue_Membench_Cacheline_MT::MoirQueue_HRC_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=584.766  Avg=575.467  Min=569.985
+
+Queue_Membench_Cacheline_MT::MoirQueue_PTB
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=862.723  Avg=821.214  Min=800.135
+
+Queue_Membench_Cacheline_MT::MoirQueue_PTB_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=583.489  Avg=572.287  Min=561.745
+
+Queue_Membench_Cacheline_MT::MoirQueue_Tagged
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=541.372  Avg=540.682  Min=539.586
+
+Queue_Membench_Cacheline_MT::MoirQueue_Tagged_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=443.522  Avg=442.135  Min=440.896
+
+Queue_Membench_Cacheline_MT::MSQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=961.558  Avg=885.473  Min=834.739
+
+Queue_Membench_Cacheline_MT::MSQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=833.754  Avg=804.329  Min=764.908
+
+Queue_Membench_Cacheline_MT::MSQueue_HRC
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=681.278  Avg=669.57  Min=637.841
+
+Queue_Membench_Cacheline_MT::MSQueue_HRC_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=596.414  Avg=584.099  Min=573.032
+
+Queue_Membench_Cacheline_MT::MSQueue_PTB
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=878.615  Avg=858.535  Min=821.648
+
+Queue_Membench_Cacheline_MT::MSQueue_PTB_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=796.238  Avg=775.323  Min=748.578
+
+Queue_Membench_Cacheline_MT::MSQueue_Tagged
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=525.92  Avg=522.175  Min=496.498
+
+Queue_Membench_Cacheline_MT::MSQueue_Tagged_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=457.92  Avg=451.305  Min=443.265
+
+Queue_Membench_Cacheline_MT::LMSQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=1027.91  Avg=919.948  Min=859.693
+
+Queue_Membench_Cacheline_MT::LMSQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=781.322  Avg=739.862  Min=697.425
+
+Queue_Membench_Cacheline_MT::LMSQueue_PTB
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=864.325  Avg=819.875  Min=776.372
+
+Queue_Membench_Cacheline_MT::LMSQueue_PTB_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=707.184  Avg=691.424  Min=677.049
+
+Queue_Membench_Cacheline_MT::RWQueue_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=873.065  Avg=871.243  Min=867.53
+
+Queue_Membench_Cacheline_MT::RWQueue_Spinlock_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=664.05  Avg=663.196  Min=662.66
+
+Queue_Membench_Cacheline_MT::StdQueue_deque_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=1665.7  Avg=1662.5  Min=1653.59
+
+Queue_Membench_Cacheline_MT::StdQueue_list_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=1114.67  Avg=1088.89  Min=1022.59
+
+Queue_Membench_Cacheline_MT::StdQueue_deque_BoostMutex
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=810.021  Avg=773.842  Min=733.236
+
+Queue_Membench_Cacheline_MT::StdQueue_list_BoostMutex
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=503.872  Avg=481.895  Min=454.815
+
+Queue_Membench_Cacheline_MT::HASQueue_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=16000000...
+	Throughput(MB/s) Max=752.264  Avg=743.978  Min=733.588
+
+
+OK 27 tests
+

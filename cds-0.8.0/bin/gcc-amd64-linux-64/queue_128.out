@@ -1,0 +1,142 @@
+Using test config file: test.conf
+System topology:
+    Logical processor count: 4
+
+Queue_Membench_MT::MoirQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=149.247  Avg=144.605  Min=137.12
+
+Queue_Membench_MT::MoirQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=122.255  Avg=114.455  Min=109.306
+
+Queue_Membench_MT::MoirQueue_HRC
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=96.7974  Avg=94.8965  Min=93.2237
+
+Queue_Membench_MT::MoirQueue_HRC_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=85.1694  Avg=83.1721  Min=81.9334
+
+Queue_Membench_MT::MoirQueue_PTB
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=139.207  Avg=131.427  Min=122.353
+
+Queue_Membench_MT::MoirQueue_PTB_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=84.3276  Avg=82.7458  Min=81.2864
+
+Queue_Membench_MT::MoirQueue_Tagged
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=77.6278  Avg=77.4164  Min=77.2637
+
+Queue_Membench_MT::MoirQueue_Tagged_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=66.7094  Avg=66.6533  Min=66.5515
+
+Queue_Membench_MT::MSQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=153.585  Avg=139.114  Min=131.208
+
+Queue_Membench_MT::MSQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=124.972  Avg=119.706  Min=113.387
+
+Queue_Membench_MT::MSQueue_HRC
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=101.965  Avg=99.6196  Min=97.5046
+
+Queue_Membench_MT::MSQueue_HRC_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=86.3849  Avg=83.8356  Min=82.1171
+
+Queue_Membench_MT::MSQueue_PTB
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=154.156  Avg=146.586  Min=132.119
+
+Queue_Membench_MT::MSQueue_PTB_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=119.514  Avg=117.052  Min=112.185
+
+Queue_Membench_MT::MSQueue_Tagged
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=76.9508  Avg=74.8761  Min=73.2868
+
+Queue_Membench_MT::MSQueue_Tagged_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=71.4176  Avg=71.4094  Min=71.4012
+
+Queue_Membench_MT::LMSQueue_HP
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=157.19  Avg=143.725  Min=132.344
+
+Queue_Membench_MT::LMSQueue_HP_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=128.43  Avg=117.986  Min=105.513
+
+Queue_Membench_MT::LMSQueue_PTB
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=160.016  Avg=153.592  Min=150.655
+
+Queue_Membench_MT::LMSQueue_PTB_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=122.623  Avg=119.294  Min=116.469
+
+Queue_Membench_MT::RWQueue_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=133.022  Avg=130.994  Min=124.3
+
+Queue_Membench_MT::RWQueue_Spinlock_Counted
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=102.424  Avg=102.401  Min=102.375
+
+Queue_Membench_MT::StdQueue_deque_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=511.375  Avg=505.239  Min=498.21
+
+Queue_Membench_MT::StdQueue_list_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=189.791  Avg=187.679  Min=187.332
+
+Queue_Membench_MT::StdQueue_deque_BoostMutex
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=127.536  Avg=118.461  Min=107.568
+
+Queue_Membench_MT::StdQueue_list_BoostMutex
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=55.6239  Avg=49.0358  Min=44.684
+
+Queue_Membench_MT::HASQueue_Spinlock
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+	Throughput(MB/s) Max=115.897  Avg=114.564  Min=113.166
+
+
+OK 27 tests
+

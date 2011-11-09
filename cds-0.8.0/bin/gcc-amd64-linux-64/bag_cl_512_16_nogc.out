@@ -1,0 +1,11 @@
+root@shadowmaster:/home/fernandes/cds-0.8.0/bin/gcc-amd64-linux-64# for x in 0 1 2 3 4 5 6 7 8 9; do LD_LIBRARY_PATH=. ./cds-unit -t=Bag_Membench_Cacheline_MT | grep Throughput; done
+	Throughput(MB/s) Max=2736.99  Avg=2736.99  Min=2736.99
+	Throughput(MB/s) Max=1993.54  Avg=1993.54  Min=1993.54
+	Throughput(MB/s) Max=2741.74  Avg=2741.74  Min=2741.74
+	Throughput(MB/s) Max=2755.2  Avg=2755.2  Min=2755.2
+	Throughput(MB/s) Max=2012.38  Avg=2012.38  Min=2012.38
+	Throughput(MB/s) Max=1966.98  Avg=1966.98  Min=1966.98
+	Throughput(MB/s) Max=2740.97  Avg=2740.97  Min=2740.97
+	Throughput(MB/s) Max=2754.34  Avg=2754.34  Min=2754.34
+	Throughput(MB/s) Max=2739.77  Avg=2739.77  Min=2739.77
+	Throughput(MB/s) Max=2761.88  Avg=2761.88  Min=2761.88

@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classcds_1_1gc_1_1hzp_1_1details_1_1_h_p_guard_t.html" title="Hazard pointer guard." alt="" coords="807,5,927,35"/>
+<area shape="rect" id="node4" href="$classcds_1_1gc_1_1hrc_1_1_thread_g_c.html" title="Thread&#39;s Garbage collector." alt="" coords="788,96,945,125"/>
+<area shape="rect" id="node8" href="$structcds_1_1gc_1_1hrc_1_1_garbage_collector_1_1thread__list__node.html" title="HRC control structure of global thread list." alt="" coords="1196,191,1497,220"/>
+<area shape="rect" id="node6" href="$classcds_1_1gc_1_1hrc_1_1_garbage_collector.html" title="Gidenstam&#39;s Garbage Collector." alt="" coords="1625,191,1823,220"/>
+<area shape="rect" id="node10" href="$structcds_1_1gc_1_1hrc_1_1details_1_1thread__descriptor.html" title="HP record of the thread." alt="" coords="408,136,653,165"/>
+<area shape="rect" id="node12" href="$classcds_1_1gc_1_1hrc_1_1details_1_1retired__vector.html" title="Array of ready for destroying pointers." alt="" coords="35,109,256,139"/>
+<area shape="rect" id="node14" href="$classcds_1_1gc_1_1hzp_1_1details_1_1_h_p_allocator.html" title="cds::gc::hzp::details::HPAllocator\&lt; TEntry \&gt;" alt="" coords="7,163,284,192"/>
+<area shape="rect" id="node17" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; cds::OS::ThreadId \&gt;" alt="" coords="757,220,976,249"/>
+<area shape="rect" id="node22" href="$structcds_1_1gc_1_1hrc_1_1_garbage_collector_1_1statistics.html" title="Internal statistics by events." alt="" coords="1217,335,1476,364"/>
+<area shape="rect" id="node24" href="$classcds_1_1atomics_1_1event__counter.html" title="Atomic event counter." alt="" coords="775,427,959,456"/>
+<area shape="rect" id="node26" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; size_t \&gt;" alt="" coords="456,427,605,456"/>
+</map>

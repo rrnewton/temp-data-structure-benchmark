@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node15" href="$classcds_1_1gc_1_1hrc_1_1_thread_g_c.html" title="Thread&#39;s Garbage collector." alt="" coords="1393,135,1551,164"/>
+<area shape="rect" id="node2" href="$structcds_1_1gc_1_1hrc_1_1_garbage_collector_1_1thread__list__node.html" title="HRC control structure of global thread list." alt="" coords="1697,165,1999,195"/>
+<area shape="rect" id="node4" href="$structcds_1_1gc_1_1hrc_1_1details_1_1thread__descriptor.html" title="HP record of the thread." alt="" coords="1013,71,1259,100"/>
+<area shape="rect" id="node6" href="$classcds_1_1gc_1_1hrc_1_1details_1_1retired__vector.html" title="Array of ready for destroying pointers." alt="" coords="640,108,861,137"/>
+<area shape="rect" id="node8" href="$classcds_1_1gc_1_1hzp_1_1details_1_1_h_p_allocator.html" title="cds::gc::hzp::details::HPAllocator\&lt; TEntry \&gt;" alt="" coords="612,55,889,84"/>
+<area shape="rect" id="node11" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; cds::OS::ThreadId \&gt;" alt="" coords="1363,253,1581,283"/>
+<area shape="rect" id="node19" href="$structcds_1_1gc_1_1hrc_1_1_garbage_collector_1_1statistics.html" title="Internal statistics by events." alt="" coords="621,181,880,211"/>
+<area shape="rect" id="node21" href="$classcds_1_1atomics_1_1event__counter.html" title="Atomic event counter." alt="" coords="207,181,391,211"/>
+<area shape="rect" id="node23" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; size_t \&gt;" alt="" coords="5,181,155,211"/>
+</map>

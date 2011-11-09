@@ -1,0 +1,17 @@
+Using test config file: test.conf
+System topology:
+    Logical processor count: 4
+
+	Bag MEMBENCH Cacheline test,
+    reader count=1 writer count=1 element count=64000000...
+
+	Throughput(MB/s) Max=1130.67  Avg=1130.67  Min=1130.67
+	Throughput(MB/s) Max=1105.91  Avg=1105.91  Min=1105.91
+	Throughput(MB/s) Max=1106.35  Avg=1106.35  Min=1106.35
+	Throughput(MB/s) Max=1100.59  Avg=1100.59  Min=1100.59
+	Throughput(MB/s) Max=1111.56  Avg=1111.56  Min=1111.56
+	Throughput(MB/s) Max=1095.66  Avg=1095.66  Min=1095.66
+	Throughput(MB/s) Max=1102.61  Avg=1102.61  Min=1102.61
+	Throughput(MB/s) Max=1102.1  Avg=1102.1  Min=1102.1
+	Throughput(MB/s) Max=1098.6  Avg=1098.6  Min=1098.6
+	Throughput(MB/s) Max=1105.57  Avg=1105.57  Min=1105.57

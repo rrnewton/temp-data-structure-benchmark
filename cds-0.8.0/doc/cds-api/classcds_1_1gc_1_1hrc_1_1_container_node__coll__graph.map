@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; bool \&gt;" alt="" coords="5,101,144,131"/>
+<area shape="rect" id="node4" href="$classcds_1_1ref__counter.html" title="cds::ref_counter\&lt; unsigned_atomic_t \&gt;" alt="" coords="168,101,416,131"/>
+<area shape="rect" id="node6" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; unsigned_atomic_t \&gt;" alt="" coords="181,5,403,35"/>
+</map>

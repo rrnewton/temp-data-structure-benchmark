@@ -1,0 +1,13 @@
+Using test config file: test.conf
+System topology:
+    Logical processor count: 4
+
+Bag_Membench_MT::SBag_HRC
+	Bag MEMBENCH test,
+    reader count=1 writer count=1 element count=128000000...
+
+	Throughput(MB/s) Max=1077.77  Avg=1064.06  Min=1025.41
+
+
+OK 1 tests
+

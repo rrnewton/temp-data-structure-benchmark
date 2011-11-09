@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structcds_1_1gc_1_1ptb_1_1details_1_1guard__data.html" title="Internal guard representation." alt="" coords="131,299,339,328"/>
+<area shape="rect" id="node5" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; guard_data * \&gt;" alt="" coords="205,411,392,440"/>
+<area shape="rect" id="node8" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; value_type \&gt;" alt="" coords="83,203,256,232"/>
+<area shape="rect" id="node10" href="$classcds_1_1atomic.html" title="cds::atomic\&lt; handoff_ptr \&gt;" alt="" coords="280,203,456,232"/>
+<area shape="rect" id="node12" href="$structcds_1_1gc_1_1ptb_1_1details_1_1retired__ptr__node.html" title="Retired pointer buffer node." alt="" coords="249,104,487,133"/>
+<area shape="rect" id="node15" href="$structcds_1_1gc_1_1details_1_1retired__ptr.html" title="Retired pointer." alt="" coords="280,5,456,35"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classcds_1_1lock_1_1_spin_t.html" title="cds::lock::SpinT\&lt; atomic_spin_t, BACKOFF \&gt;" alt="" coords="5,5,296,35"/>
+<area shape="rect" id="node3" href="$classcds_1_1lock_1_1_spinlock.html" title="Spin&#45;lock based on smallest atomic type defined for platform." alt="" coords="344,5,563,35"/>
+</map>

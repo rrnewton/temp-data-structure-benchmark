@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$structcds_1_1ordered__list_1_1_ordered_list.html" title="Base of ordered list classes." alt="" coords="272,59,619,88"/>
+<area shape="rect" id="node5" href="$classcds_1_1ordered__list_1_1details_1_1michael__list__tagged_1_1list__base.html" title="Michael&#39;s ordered list with Tagged Pointer GC." alt="" coords="709,5,1211,35"/>
+<area shape="rect" id="node7" href="$classcds_1_1ordered__list_1_1_lazy_list_3_01gc_1_1no__gc_00_01_k_e_y_00_01_v_a_l_u_e_00_01_p_a_iaca93a45733c94d7f1478ca0a1f05451.html" title="Persistent (no item deletion) lazy list specialization." alt="" coords="676,59,1244,88"/>
+<area shape="rect" id="node9" href="$classcds_1_1ordered__list_1_1_michael_list_3_01gc_1_1no__gc_00_01_k_e_y_00_01_v_a_l_u_e_00_01_p_b3efa5e5b1c65157da88fce6ea4b5e02.html" title="Persistent (no deletion) Michael&#39;s ordered list." alt="" coords="668,112,1252,141"/>
+</map>

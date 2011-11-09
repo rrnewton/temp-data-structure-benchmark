@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classcds_1_1details_1_1_allocator.html" title="Allocator\&lt; block, ALLOCATOR \&gt;" alt="" coords="104,5,317,35"/>
+<area shape="rect" id="node5" href="$classcds_1_1details_1_1_allocator.html" title="Allocator\&lt; Node, ALLOCATOR \&gt;" alt="" coords="105,59,316,88"/>
+<area shape="rect" id="node7" href="$classcds_1_1details_1_1_allocator.html" title="Allocator\&lt; T *, ALLOCATOR \&gt;" alt="" coords="112,112,309,141"/>
+<area shape="rect" id="node9" href="$classcds_1_1details_1_1_allocator.html" title="Extends std::allocator interface to provide semantics like operator new and delete." alt="" coords="121,165,300,195"/>
+</map>

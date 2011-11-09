@@ -1,0 +1,75 @@
+0.8.0  28.03.2011 (beta)
+    1. Added: cds::Initialize and cds::Terminate functions that initializes and frees library's 
+       internal structures.
+    2. Added: cds::memory::michael::Heap - Michael's lock-free allocator 
+    3. Added: Exponential back-off strategy for spinning 
+    4. Added: cds::queue::vyukov_mpmc_bounded - bounded queue 
+       developed by Dmitry Vyukov (http://www.1024cores.net)
+    5. Added: support for FreeBSD amd64, x86
+
+0.7.2  27.02.2011 (beta)
+    1. [Bug 3157201] Added implementation of threading manager based on Windows TLS API, see 
+       cds::threading::wintls::Manager. Added CDS_THREADING_WIN_TLS macro. See docs for
+       cds::threading namespace for details.
+    2. Fixed bug in cds::threading::pthread::Manager: ptb_gc has not been initialized properly.
+    3. New function
+            template <typename T, typename FUNC>
+            bool erase( const key_type& key, T& dest, FUNC func ) ;
+       has been added to all map classes.
+    4. New function
+            template <typename T, typename FUNC>
+            bool insert( const key_type& key, T& val, FUNC func ) ;
+       has been added to all map classes.
+    5. Added new argument "bNew" to functor "func" of map's "ensure" member function:
+            void func( VALUE& itemValue, const VALUE& val, bool bNew ) ;
+        bNew = true if new item has been added
+        bNew = false if key is found
+    6. Fixed bug in cds::map::SplitOrderedList: LSB of dummy node's hash should be zero
+    7. Changed: thread liveliness checking on *nix has been changed to pthread_kill(id, 0).
+    8. Fixed: in map template member functions the functor may be passed by value 
+       or by reference; use boost::ref( yourFunctor ) to pass your functor by reference
+    9. Fixed: cds::gc::tagged GC and all classes based on this GC has been rewritten 
+       to solve stability problems.
+
+0.7.1  30.12.2010 (beta)
+    1. [Bug 3130852] cds::queue::TZCyclicQueue::empty() has been corrected
+    2. [Bug 3128161] It seems, GCC 4.4 has a bug in __thread on x86 and x86_64. New "threading model"
+       CDS_THREADING_AUTODETECT has been added. See docs of cds::threading namespace for details
+    3. Fixed errors in the "Pass-the-Buck" garbage collector (namespace cds::gc::ptb)
+    4. [Bug 3128148] The code is aligned with the C++ standard (minor violations has been removed)
+    5. [Bug 3141654] missing break statement for atomic store - fixed
+    6. Added in-place scan strategy to cds::gc::hzp::GarbageCollector that does not allocate any memory.
+    7. Fixed bugs in HRC and tagged GC
+    
+0.7.0 05.12.2010 (beta)
+    1. Preliminary support for "Pass The Buck" memory manager is added. See cds::gc::ptb namespace.
+    2. Many part of library is rewritten to generalize the usage of various GCs
+    3. The new class cds::details::aligned_allocator has been added for allocating aligned memory 
+       blocks. It is useful for Tagged Pointer memory reclamation schema (cds::gc::tagged_gc).
+    4. [Break change] New argument has been added to the member functions "ensure" and "find" 
+       for ordered list and map classes 
+    5. New member function "emplace" has been added to ordered list and map classes. This member function
+       allows change the value (or a part of it) of list/map item.
+    6. The internal structure of class cds::map::MichaelHashMap is completely refactored to support
+       cds::gc::no_gc correctly
+    7. The classes RecursiveSpinT, RecursiveSpin32, RecursiveSpin64, and RecursiveSpin from cds::lock
+       namespace have been renamed to ReentrantSpinT, ReentrantSpin32, ReentrantSpin64, and ReentrantSpin
+       respectively
+    8. Compiler support: GCC version below 4.3.0 is not supported
+    9. Fixed memory leak in cds::map::SplitOrderedList
+   10. Added compiler barrier to spin-lock release primitive for x86 and amd64
+   11. Makefile script is changed to resolve the problem when an user calls 'make clean' directly. 
+       Thanks to Tamas Lengyel to point me to this bug.
+   12. The file dictionary.txt is exluded from distributive. This file is used for testing purposes only.
+       You may create dictionary.txt in this way:
+        cd ./tests/data
+        perl -X split.pl
+
+0.6.0 26.03.2010 (beta)
+    1. The library is rewritten using atomic primitives with explicit memory ordering (based on C++
+       memory model proposal). The implementation of atomic primitives for supported architectures 
+       is developed from scratch.
+    2. Total refactoring
+
+0.5.0 31.12.2009  (beta)
+    First release 

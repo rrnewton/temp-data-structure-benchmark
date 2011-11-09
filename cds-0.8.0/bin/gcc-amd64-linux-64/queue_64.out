@@ -1,0 +1,83 @@
+	Queue MEMBENCH test,
+    reader count=1 writer count=1 element count=64000000...
+
+Queue_Membench_MT::MoirQueue_HP
+	Throughput(MB/s) Max=144.219  Avg=136.262  Min=122.703
+
+Queue_Membench_MT::MoirQueue_HP_Counted
+	Throughput(MB/s) Max=119.416  Avg=112.68  Min=103.222
+
+Queue_Membench_MT::MoirQueue_HRC
+	Throughput(MB/s) Max=93.1251  Avg=91.3657  Min=90.2568
+
+Queue_Membench_MT::MoirQueue_HRC_Counted
+	Throughput(MB/s) Max=82.353  Avg=81.2705  Min=79.6502
+
+Queue_Membench_MT::MoirQueue_PTB
+	Throughput(MB/s) Max=140.161  Avg=128.509  Min=122.647
+
+Queue_Membench_MT::MoirQueue_PTB_Counted
+	Throughput(MB/s) Max=83.2786  Avg=82.3233  Min=80.8954
+
+Queue_Membench_MT::MoirQueue_Tagged
+	Throughput(MB/s) Max=77.5016  Avg=77.471  Min=77.4277
+
+Queue_Membench_MT::MoirQueue_Tagged_Counted
+	Throughput(MB/s) Max=63.3886  Avg=62.618  Min=58.0172
+
+Queue_Membench_MT::MSQueue_HP
+	Throughput(MB/s) Max=156.872  Avg=133.543  Min=121.16
+
+Queue_Membench_MT::MSQueue_HP_Counted
+	Throughput(MB/s) Max=125.302  Avg=115.68  Min=106.253
+
+Queue_Membench_MT::MSQueue_HRC
+	Throughput(MB/s) Max=98.8854  Avg=96.8336  Min=93.0537
+
+Queue_Membench_MT::MSQueue_HRC_Counted
+	Throughput(MB/s) Max=84.7482  Avg=84.0884  Min=82.5291
+
+Queue_Membench_MT::MSQueue_PTB
+	Throughput(MB/s) Max=149.771  Avg=142.33  Min=140.019
+
+Queue_Membench_MT::MSQueue_PTB_Counted
+	Throughput(MB/s) Max=114.939  Avg=113.585  Min=112.277
+
+Queue_Membench_MT::MSQueue_Tagged
+	Throughput(MB/s) Max=70.1678  Avg=69.867  Min=67.8329
+
+Queue_Membench_MT::MSQueue_Tagged_Counted
+	Throughput(MB/s) Max=66.1892  Avg=65.671  Min=65.0028
+
+Queue_Membench_MT::LMSQueue_HP
+	Throughput(MB/s) Max=148.793  Avg=141.99  Min=131.671
+
+Queue_Membench_MT::LMSQueue_HP_Counted
+	Throughput(MB/s) Max=124.788  Avg=111.756  Min=104.867
+
+Queue_Membench_MT::LMSQueue_PTB
+	Throughput(MB/s) Max=151.859  Avg=148  Min=142.298
+
+Queue_Membench_MT::LMSQueue_PTB_Counted
+	Throughput(MB/s) Max=117.41  Avg=113.882  Min=106.456
+
+Queue_Membench_MT::RWQueue_Spinlock
+	Throughput(MB/s) Max=132.525  Avg=130.934  Min=123.627
+
+Queue_Membench_MT::RWQueue_Spinlock_Counted
+	Throughput(MB/s) Max=103.143  Avg=102.603  Min=102.408
+
+Queue_Membench_MT::StdQueue_deque_Spinlock
+	Throughput(MB/s) Max=403.311  Avg=402.733  Min=402.302
+
+Queue_Membench_MT::StdQueue_list_Spinlock
+	Throughput(MB/s) Max=192.625  Avg=191.349  Min=189.603
+
+Queue_Membench_MT::StdQueue_deque_BoostMutex
+	Throughput(MB/s) Max=125.56  Avg=123.546  Min=119.235
+
+Queue_Membench_MT::StdQueue_list_BoostMutex
+	Throughput(MB/s) Max=62.3764  Avg=57.6455  Min=49.565
+
+Queue_Membench_MT::HASQueue_Spinlock
+	Throughput(MB/s) Max=119.079  Avg=116.103  Min=113.639

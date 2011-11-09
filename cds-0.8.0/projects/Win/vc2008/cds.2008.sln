@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cds", "cds.2008.vcproj", "{408FE9BC-44F0-4E6A-89FA-D6F952584239}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unit-cds", "unit.2008.vcproj", "{3B8023D1-6607-4B28-8701-822417999E2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239} = {408FE9BC-44F0-4E6A-89FA-D6F952584239}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Debug|Win32.ActiveCfg = Debug|Win32
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Debug|Win32.Build.0 = Debug|Win32
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Debug|x64.ActiveCfg = Debug|x64
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Debug|x64.Build.0 = Debug|x64
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Release|Win32.ActiveCfg = Release|Win32
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Release|Win32.Build.0 = Release|Win32
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Release|x64.ActiveCfg = Release|x64
+		{408FE9BC-44F0-4E6A-89FA-D6F952584239}.Release|x64.Build.0 = Release|x64
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Debug|Win32.Build.0 = Debug|Win32
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Debug|x64.ActiveCfg = Debug|x64
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Debug|x64.Build.0 = Debug|x64
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Release|Win32.ActiveCfg = Release|Win32
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Release|Win32.Build.0 = Release|Win32
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Release|x64.ActiveCfg = Release|x64
+		{3B8023D1-6607-4B28-8701-822417999E2D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal
