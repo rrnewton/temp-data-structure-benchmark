@@ -25,12 +25,10 @@ namespace queue {
         static size_t s_nQueueSize = 64000000   ;
         static size_t s_nRepetitionCount = 2  ;
 
-        struct Value {
-            long nNo;
-        };
+        typedef void* Value;
     }
 
-    class Queue_Membench_MT: public CppUnitMini::TestCase
+    class Queue_Membench_PTR_MT: public CppUnitMini::TestCase
     {
         template <class QUEUE>
         class WriterThread: public CppUnitMini::TestThread
@@ -48,9 +46,9 @@ namespace queue {
                 , m_Queue( src.m_Queue )
             {}
 
-            Queue_Membench_MT&  getTest()
+            Queue_Membench_PTR_MT&  getTest()
             {
-                return reinterpret_cast<Queue_Membench_MT&>( m_Pool.m_Test )   ;
+                return reinterpret_cast<Queue_Membench_PTR_MT&>( m_Pool.m_Test )   ;
             }
 
             virtual void init()
@@ -67,9 +65,11 @@ namespace queue {
                 size_t nPushCount = getTest().m_nThreadPushCount;
                 Value v;
 
-                for (v.nNo = 0; v.nNo < nPushCount; ++v.nNo)
+                for (unsigned int i = 1; i <= nPushCount; ++i) {
+                    v = (void*) i;
                     while (! m_Queue.push( v ))
                         ;
+                }
             }
         };
 
@@ -89,9 +89,9 @@ namespace queue {
                 , m_Queue( src.m_Queue )
             {}
 
-            Queue_Membench_MT&  getTest()
+            Queue_Membench_PTR_MT&  getTest()
             {
-                return reinterpret_cast<Queue_Membench_MT&>( m_Pool.m_Test )   ;
+                return reinterpret_cast<Queue_Membench_PTR_MT&>( m_Pool.m_Test )   ;
             }
 
             virtual void init()
@@ -219,8 +219,9 @@ namespace queue {
 #endif
         TEST_CASE( HASQueue_Spinlock, Value )
 
-        CPPUNIT_TEST_SUITE(Queue_Membench_MT)
+        CPPUNIT_TEST_SUITE(Queue_Membench_PTR_MT)
             CPPUNIT_TEST(CSQueue)              ;
+            CPPUNIT_TEST(FFQueue);
             CPPUNIT_TEST(MoirQueue_HP)              ;
             CPPUNIT_TEST(MoirQueue_HP_Counted)      ;
             CPPUNIT_TEST(MoirQueue_HRC)              ;
@@ -269,4 +270,4 @@ namespace queue {
 
 } // namespace queue
 
-CPPUNIT_TEST_SUITE_REGISTRATION(queue::Queue_Membench_MT);
+CPPUNIT_TEST_SUITE_REGISTRATION(queue::Queue_Membench_PTR_MT);

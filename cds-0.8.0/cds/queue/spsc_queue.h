@@ -1,21 +1,5 @@
-/* csqueue.h
-* Not any company's property but Public-Domain
-* Do with source-code as you will. No requirement to keep this
-* header if need to use it/change it/ or do whatever with it
-*
-* Note that there is No guarantee that this code will work
-* and I take no responsibility for this code and any problems you
-* might get if using it. The code is highly platform dependent!
-*
-* Code & platform dependent issues with it was originally
-* published at http://www.kjellkod.cc/threadsafecircularqueue
-* 2009-11-02
-* @author Kjell Hedström, hedstrom@kjellkod.cc */
-
-/* XXX(fernandes): this is basically a Lamport queue. */
-
-#ifndef CSQUEUE_H_
-#define CSQUEUE_H_
+#ifndef SPSC_QUEUE_H_
+#define SPSC_QUEUE_H_
 
 namespace cds {
     namespace queue {
@@ -129,4 +113,4 @@ unsigned int CircularFifo<Element, Size>::increment(unsigned int idx_) const
 
     }
 }
-#endif /* CSQUEUE_H_ */
+#endif /* SPSC_QUEUE_H_ */

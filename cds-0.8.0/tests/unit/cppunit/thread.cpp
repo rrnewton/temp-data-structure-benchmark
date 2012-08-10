@@ -78,8 +78,8 @@ namespace CppUnitMini {
 
         // Wait while all threads is done
         m_pBarrierDone->wait()  ;
-        boost::posix_time::time_duration sleepTime = boost::posix_time::milliseconds(500)  ;
-        boost::this_thread::sleep(sleepTime)  ;
+        //boost::posix_time::time_duration sleepTime = boost::posix_time::milliseconds(500)  ;
+        //boost::this_thread::sleep(sleepTime)  ;
         //::Sleep(500)    ;
     }
 

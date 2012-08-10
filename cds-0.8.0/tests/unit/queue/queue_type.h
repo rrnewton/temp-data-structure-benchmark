@@ -12,6 +12,7 @@
 #define __UNIT_QUEUE_TYPES_H
 
 #include <cds/queue/csqueue.h>
+#include <cds/queue/ffqueue.h>
 
 #include <cds/queue/moir_queue_hzp.h>
 #include <cds/queue/moir_queue_hrc.h>
@@ -162,6 +163,7 @@ namespace queue {
     template <typename VALUE>
     struct Types {
       typedef cds::queue::CircularFifo<VALUE, 64000>             CSQueue        ;
+      typedef cds::queue::FastForwardQueue<VALUE, 64000>             FFQueue        ;
         typedef cds::queue::MoirQueue<cds::gc::hzp_gc, VALUE>           MoirQueue_HP        ;
         typedef cds::queue::MoirQueue<cds::gc::hrc_gc, VALUE>           MoirQueue_HRC       ;
         typedef cds::queue::MoirQueue<cds::gc::ptb_gc, VALUE>           MoirQueue_PTB       ;

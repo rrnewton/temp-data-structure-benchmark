@@ -11,6 +11,7 @@
 #ifndef __UNIT_BAG_TYPES_H
 #define __UNIT_BAG_TYPES_H
 
+#include <cds/queue/ffqueue_sentinel.h>
 #include <cds/bag/sbag_hrc_gccthread.h>
 
 
@@ -22,6 +23,7 @@ namespace bag {
     template <typename VALUE, int NR_THREADS>
     struct Types {
         typedef cds::bag::SBag<cds::gc::hrc_gc, VALUE, NR_THREADS>           SBag_HRC        ;
+        typedef cds::queue::FastForwardQueue<VALUE, 64000>           FFQueue        ;
     };
 }
 

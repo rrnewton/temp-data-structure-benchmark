@@ -77,6 +77,7 @@ TEST_SRC_DIR=../tests/unit
 TEST_DATA_DIR=`pwd`/../tests/data
 
 TEST_OBJ_FILE=$(TEST_SRC_DIR)/queue/membench_mt.o \
+    $(TEST_SRC_DIR)/queue/membench_ptr_mt.o \
     $(TEST_SRC_DIR)/queue/membench_cacheline_mt.o \
     $(TEST_SRC_DIR)/bag/membench_mt.o \
     $(TEST_SRC_DIR)/bag/membench_cacheline_mt.o \

@@ -7,21 +7,42 @@
     Version 0.8.0
 */
 
-
+#define _GNU_SOURCE
 #include "cppunit/thread.h"
 #include "bag/bag_type.h"
 #include <vector>
 #include <algorithm>
+#include <sched.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // Multi-threaded random bag test
 namespace bag {
+
+  void setAffinity(int tid, int cpuid) {
+    cpu_set_t mask;
+    int error;
+
+    CPU_ZERO(&mask);
+    CPU_SET(cpuid, &mask);
+    error = sched_setaffinity(0, sizeof(mask), &mask);
+    if (error == 0) {
+      printf("Thread %d has been assigned to CPU %d\n", tid, cpuid);
+      fflush(stdout);
+    } else {
+      printf("Thread %d failed to be assigned to CPU %d\n", tid, cpuid);
+      fflush(stdout);
+      exit(-1);
+    }
+}
+
 
 #define TEST_CASE( B, V, N ) void B() { test< Types<V, N>::B >(); }
 
     namespace {
         static size_t s_nReaderThreadCount = 1  ;
         static size_t s_nWriterThreadCount = 1  ;
-        static size_t s_nElementCount = 64000000   ;
+        static size_t s_nElementCount = 512000000   ;
         static size_t s_nRepetitionCount = 2  ;
 
         struct Cacheline {
@@ -34,7 +55,7 @@ namespace bag {
             long e6;
             long e7;
 
-            bool operator==(const Cacheline &other) const {
+            inline bool operator==(const Cacheline &other) const {
               return nNo == other.nNo;
             }
         };
@@ -70,6 +91,7 @@ namespace bag {
             {
                 cds::threading::Manager::attachThread()     ;
                 m_Bag.initThread( m_threadId );
+                setAffinity(m_threadId, 2+m_threadId);
             }
             virtual void fini()
             {
@@ -119,6 +141,7 @@ namespace bag {
             {
                 cds::threading::Manager::attachThread()     ;
                 m_Bag.initThread( m_threadId ) ;
+                setAffinity(m_threadId, 2+m_threadId);
             }
             virtual void fini()
             {
@@ -181,13 +204,17 @@ namespace bag {
             double mintime = std::numeric_limits<double>::max();
             double maxtime = 0;
 
-            for (long i = 1; i < s_nRepetitionCount; i++) /* note -- skip first iteration */
-            {
-              avgtime = avgtime + times[i];
-              mintime = std::min(mintime, times[i]);
-              maxtime = std::max(maxtime, times[i]);
+            if (s_nRepetitionCount == 1)
+              avgtime = mintime = maxtime = *times;
+            else {
+              for (long i = 1; i < s_nRepetitionCount; i++) /* note -- skip first iteration */
+              {
+                avgtime = avgtime + times[i];
+                mintime = std::min(mintime, times[i]);
+                maxtime = std::max(maxtime, times[i]);
+              }
+              avgtime = avgtime/(double)(s_nRepetitionCount-1);
             }
-            avgtime = avgtime/(double)(s_nRepetitionCount-1);
 
             CPPUNIT_MSG( "Throughput(MB/s) Max=" << (mbs/mintime)
                     << "  Avg=" << (mbs/avgtime)
@@ -204,9 +231,11 @@ namespace bag {
 
     protected:
         TEST_CASE( SBag_HRC, Cacheline, 2 )
+        TEST_CASE( FFQueue, Cacheline, 2 )
 
         CPPUNIT_TEST_SUITE(Bag_Membench_Cacheline_MT)
             CPPUNIT_TEST(SBag_HRC)              ;
+            CPPUNIT_TEST(FFQueue)              ;
         CPPUNIT_TEST_SUITE_END();
     };
 

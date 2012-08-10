@@ -195,7 +195,7 @@ namespace cds {
             // Begin methods adapted from paper.
             //////////////////////////////////////
 
-            void add(value_type item) {
+            void add(value_type& item) {
                 TLSData * m_tlsData = _threadData();
                 int head = m_tlsData->m_nThreadHead;
                 Block * block = m_tlsData->m_pThreadBlock;
